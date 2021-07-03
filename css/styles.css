@@ -33,6 +33,39 @@ html {
     margin: 0 auto;
 }
 
+#scrollToTop{
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ff8e49;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    color: #eaeaea;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+#scrollToTop:active{
+
+    background: #008130;
+}
+
+#scrollToTop.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+#scrollToTop:hover{
+    background: #008130;
+}
+
 /*NAVBAR*/
 #navbar {
     background-color: #EAEAEA;
@@ -121,12 +154,20 @@ html {
 
 /*(HOME) SECCIÓN 4: PROVEEDORES*/
 
-#seccionProveedores h2 {
+#titulo-proveedores h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    padding: 2em 0;
+    padding-top: 2em;
     text-transform: uppercase;
+}
+
+#titulo-proveedores h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 1.2em;
+    padding-bottom: 1.5em;
 }
 
 #proveedores{
@@ -139,6 +180,14 @@ html {
 }
 
 /*(OBRAS) SECCIÓN 1: CONTRACT*/
+#titulo-obras h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 2em;
+    text-transform: uppercase;
+}
+
 #contract{
     display: flex;
     padding: 35px 0;
@@ -148,6 +197,7 @@ html {
 
 #contract h2{
     margin-left: 65px;
+    font-size: 25px;
 }
 
 /*(OBRAS) SECCIÓN 2: MERCADO LIBRE*/
@@ -160,6 +210,7 @@ html {
 
 #mercado-libre h2{
     margin-left: 65px;
+    font-size: 25px;
 }
 
 /*(OBRAS) SECCIÓN 3: TOWN HOUSE*/
@@ -172,6 +223,7 @@ html {
 
 #town-house h2{
     margin-left: 65px;
+    font-size: 25px;
 }
 
 /*(OBRAS) SECCIÓN 4: NEKZA*/
@@ -182,33 +234,50 @@ html {
     align-items: center;
 }
 
+/*(OBRAS) ESPACIO AL FINAL*/
+#espacio{
+    padding: 75px 0;
+}
+
 /*(CONTACTO) DATOS DE CONTACTO*/
+
+#titulo-contacto h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 2em 0;
+    text-transform: uppercase;
+}
 
 #contacto-mapa {
     position:relative; 
     display: flex;
     justify-content: center;
-    margin: 4em;
-    flex: 1;
+    margin: 2.5em 4.5em;
+    padding-bottom: 5em;
     }
 
 #contacto {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     margin: auto;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
     box-sizing: border-box;
-    padding: 3em;    
+    padding: 4em;    
 }
 
 #contacto ul div a{
     color: #343434;
     text-decoration: none;
     list-style: none;  
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-align: center;
+}
+
+#email:hover{
+    color: #4576b0;
 }
 
 #contacto div i{
@@ -220,10 +289,11 @@ html {
     padding-left: 70px;
 }
 
-#mapa {
-    position: relative;
+#mapa2 {
+    padding-left: 3em;
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    align-items: right;
     width: 100%
 }
 
