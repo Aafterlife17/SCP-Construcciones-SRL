@@ -33,19 +33,30 @@
 </head>
 <body>
 <!--HEADER-->
-<header>
-    <nav id="navbar">
-        <div id="navbar-header" class="container">
-            <a id="logo" href="index.html"><img src="images/logo-header.png" alt="SCP Construcciones"></a>
+<nav>
+    <div class="logo">
+        <a href="index.html"><img src="images/logo-header.png" alt="SCP Construcciones S.R.L."></a>
+    </div>
 
-            <ul id="main-nav">
-                <li><a class="btn" href="index.html">Home</a></li>
-                <li><a class="btn" href="obras.html">Obras</a></li>
-                <li><a class="btn active" href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <ul class="nav-links">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        
+        <li>
+            <a href="obras.html">Obras</a>
+        </li>
+        <li>
+            <a href="contacto.html">Contacto</a>
+
+        </li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
  
 <!--CUERPO-->
 <main>
@@ -54,25 +65,24 @@
         <h2>Contáctenos</h2>
         <section id="contacto-mapa">
             <div id="contacto" class="container">
-                <ul>
-                    <div><a id="email" href="mailto:francopaduano@gmail.com">
+                
+                    <div class="box">
                         <i class="fas fa-envelope" style="color: #6CBE72;"></i>
-                        francopaduano@gmail.com</a></div>
-                    <div><a> 
-                        <i class="fas fa-phone-alt" style="color: #6CBE72;"></i>
-                        1148390865 / 1148390757</a></div>
-                    <div><a>
-                        <i class="fas fa-map-marker-alt" style="color:#F18D4F"></i>
-                        Marcelo Torcuato de Alvear 2577</a></div>
-                    <div id="maipu"><a>
-                    Villa Maipú (1650) San Martín, Provincia de Buenos Aires</a></div> 
-                </ul>
+                        <h3><a id="email" href="mailto:francopaduano@gmail.com">francopaduano@gmail.com</a></h3>
+                    </div>
+                    <div class="box">
+                    <i class="fas fa-phone-alt" style="color: #6CBE72;"></i>
+                        <h3>1148390865 / 1148390757</h3>
+                    </div>
+                    <div class="box">
+                    <i class="fas fa-map-marker-alt" style="color:#F18D4F"></i>
+                        <h3>Marcelo Torcuato de Alvear 2577, Villa Maipú (1650) San Martín, Provincia de Buenos Aires</h3>
+                    </div>
+                
             </div>
 
-            <!--Villa Maipú (1650) San Martín, Provincia de Buenos Aires-->
-
             <div id="mapa" class="container">
-                <iframe id="mapa2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.7944437467336!2d-58.52659828477167!3d-34.55875958047121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7161f8936e7%3A0x43bf93d645d4b2eb!2sMarcelo%20Torcuato%20de%20Alvear%202577%2C%20Villa%20Maip%C3%BA%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1624481808472!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe id="mapa2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.7944437467336!2d-58.52659828477167!3d-34.55875958047121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7161f8936e7%3A0x43bf93d645d4b2eb!2sMarcelo%20Torcuato%20de%20Alvear%202577%2C%20Villa%20Maip%C3%BA%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1624481808472!5m2!1ses-419!2sar" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
     </article>
@@ -93,5 +103,7 @@
 <!--SCRIPT BOOTSTRAP-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+<!--SCRIPT PÁGINA-->
+<script type="text/javascript" src="javascript/script.js"> </script>
 </body>
 </html>
